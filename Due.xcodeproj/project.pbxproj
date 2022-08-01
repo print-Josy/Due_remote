@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C4EB72E2897033A0000BF00 /* InfoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EB72D2897033A0000BF00 /* InfoTextView.swift */; };
 		8C542975288487DA008EB10A /* DueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C542974288487DA008EB10A /* DueApp.swift */; };
-		8C542977288487DA008EB10A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C542976288487DA008EB10A /* ContentView.swift */; };
+		8C542977288487DA008EB10A /* DueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C542976288487DA008EB10A /* DueDetailView.swift */; };
 		8C542979288487DC008EB10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C542978288487DC008EB10A /* Assets.xcassets */; };
 		8C54297C288487DC008EB10A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C54297B288487DC008EB10A /* Preview Assets.xcassets */; };
 		8C542986288487DC008EB10A /* DueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C542985288487DC008EB10A /* DueTests.swift */; };
 		8C542990288487DC008EB10A /* DueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54298F288487DC008EB10A /* DueUITests.swift */; };
 		8C542992288487DC008EB10A /* DueUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C542991288487DC008EB10A /* DueUITestsLaunchTests.swift */; };
+		8C54299F288499D2008EB10A /* SliderCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54299E288499D2008EB10A /* SliderCalendarView.swift */; };
+		8C5429A22884A0A4008EB10A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5429A12884A0A4008EB10A /* Theme.swift */; };
+		8C5429A42884A324008EB10A /* DueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5429A32884A324008EB10A /* DueModel.swift */; };
+		8C5429A6288707EF008EB10A /* GaugeProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5429A5288707EF008EB10A /* GaugeProgress.swift */; };
+		8C5429A82888309A008EB10A /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5429A72888309A008EB10A /* ProjectDetailView.swift */; };
+		8C5429AA288C8E39008EB10A /* TaskOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5429A9288C8E38008EB10A /* TaskOverView.swift */; };
+		8C5429AC288D9C51008EB10A /* SliderTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5429AB288D9C51008EB10A /* SliderTaskView.swift */; };
+		8C5429AE288D9FA4008EB10A /* ControlBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5429AD288D9FA4008EB10A /* ControlBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C4EB72D2897033A0000BF00 /* InfoTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTextView.swift; sourceTree = "<group>"; };
 		8C542971288487DA008EB10A /* Due.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Due.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C542974288487DA008EB10A /* DueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueApp.swift; sourceTree = "<group>"; };
-		8C542976288487DA008EB10A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8C542976288487DA008EB10A /* DueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueDetailView.swift; sourceTree = "<group>"; };
 		8C542978288487DC008EB10A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C54297B288487DC008EB10A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8C542981288487DC008EB10A /* DueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +54,14 @@
 		8C54298B288487DC008EB10A /* DueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C54298F288487DC008EB10A /* DueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueUITests.swift; sourceTree = "<group>"; };
 		8C542991288487DC008EB10A /* DueUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C54299E288499D2008EB10A /* SliderCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCalendarView.swift; sourceTree = "<group>"; };
+		8C5429A12884A0A4008EB10A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8C5429A32884A324008EB10A /* DueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueModel.swift; sourceTree = "<group>"; };
+		8C5429A5288707EF008EB10A /* GaugeProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeProgress.swift; sourceTree = "<group>"; };
+		8C5429A72888309A008EB10A /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
+		8C5429A9288C8E38008EB10A /* TaskOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskOverView.swift; sourceTree = "<group>"; };
+		8C5429AB288D9C51008EB10A /* SliderTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTaskView.swift; sourceTree = "<group>"; };
+		8C5429AD288D9FA4008EB10A /* ControlBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +112,16 @@
 		8C542973288487DA008EB10A /* Due */ = {
 			isa = PBXGroup;
 			children = (
+				8C5429A02884A083008EB10A /* Models */,
 				8C542974288487DA008EB10A /* DueApp.swift */,
-				8C542976288487DA008EB10A /* ContentView.swift */,
+				8C542976288487DA008EB10A /* DueDetailView.swift */,
+				8C5429A72888309A008EB10A /* ProjectDetailView.swift */,
+				8C5429A9288C8E38008EB10A /* TaskOverView.swift */,
+				8C5429AB288D9C51008EB10A /* SliderTaskView.swift */,
+				8C5429AD288D9FA4008EB10A /* ControlBarView.swift */,
+				8C4EB72D2897033A0000BF00 /* InfoTextView.swift */,
+				8C54299E288499D2008EB10A /* SliderCalendarView.swift */,
+				8C5429A5288707EF008EB10A /* GaugeProgress.swift */,
 				8C542978288487DC008EB10A /* Assets.xcassets */,
 				8C54297A288487DC008EB10A /* Preview Content */,
 			);
@@ -125,6 +151,15 @@
 				8C542991288487DC008EB10A /* DueUITestsLaunchTests.swift */,
 			);
 			path = DueUITests;
+			sourceTree = "<group>";
+		};
+		8C5429A02884A083008EB10A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8C5429A12884A0A4008EB10A /* Theme.swift */,
+				8C5429A32884A324008EB10A /* DueModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +292,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C542977288487DA008EB10A /* ContentView.swift in Sources */,
+				8C5429AC288D9C51008EB10A /* SliderTaskView.swift in Sources */,
+				8C54299F288499D2008EB10A /* SliderCalendarView.swift in Sources */,
+				8C5429AE288D9FA4008EB10A /* ControlBarView.swift in Sources */,
+				8C5429A42884A324008EB10A /* DueModel.swift in Sources */,
+				8C5429A6288707EF008EB10A /* GaugeProgress.swift in Sources */,
+				8C5429A22884A0A4008EB10A /* Theme.swift in Sources */,
+				8C542977288487DA008EB10A /* DueDetailView.swift in Sources */,
 				8C542975288487DA008EB10A /* DueApp.swift in Sources */,
+				8C5429A82888309A008EB10A /* ProjectDetailView.swift in Sources */,
+				8C5429AA288C8E39008EB10A /* TaskOverView.swift in Sources */,
+				8C4EB72E2897033A0000BF00 /* InfoTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

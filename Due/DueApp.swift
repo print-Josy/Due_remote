@@ -11,7 +11,9 @@ import SwiftUI
 struct DueApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                TaskOverView(due: DueModel.sampleData)
+            }
         }
     }
 }
