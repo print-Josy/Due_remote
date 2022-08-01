@@ -24,6 +24,7 @@ struct InfoTextView: View {
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color.white, lineWidth: 1))
                         .font(.callout)
+                        
                 }
                 .onAppear() {
                     UITextView.appearance().backgroundColor = .clear
