@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84A16CDD28995B8F00637C7E /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84A16CDA28995B8F00637C7E /* Poppins-Light.ttf */; };
+		84A16CDE28995B8F00637C7E /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84A16CDB28995B8F00637C7E /* Poppins-Medium.ttf */; };
+		84A16CDF28995B8F00637C7E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84A16CDC28995B8F00637C7E /* Poppins-SemiBold.ttf */; };
 		8C4EB72E2897033A0000BF00 /* InfoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EB72D2897033A0000BF00 /* InfoTextView.swift */; };
 		8C542975288487DA008EB10A /* DueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C542974288487DA008EB10A /* DueApp.swift */; };
 		8C542977288487DA008EB10A /* DueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C542976288487DA008EB10A /* DueDetailView.swift */; };
@@ -43,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84A16CDA28995B8F00637C7E /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		84A16CDB28995B8F00637C7E /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		84A16CDC28995B8F00637C7E /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		84A16CE02899617E00637C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8C4EB72D2897033A0000BF00 /* InfoTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTextView.swift; sourceTree = "<group>"; };
 		8C542971288487DA008EB10A /* Due.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Due.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C542974288487DA008EB10A /* DueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueApp.swift; sourceTree = "<group>"; };
@@ -89,6 +96,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84A16CD928995ADC00637C7E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84A16CDA28995B8F00637C7E /* Poppins-Light.ttf */,
+				84A16CDB28995B8F00637C7E /* Poppins-Medium.ttf */,
+				84A16CDC28995B8F00637C7E /* Poppins-SemiBold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		8C542968288487DA008EB10A = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +129,7 @@
 		8C542973288487DA008EB10A /* Due */ = {
 			isa = PBXGroup;
 			children = (
+				84A16CE02899617E00637C7E /* Info.plist */,
 				8C5429A02884A083008EB10A /* Models */,
 				8C542974288487DA008EB10A /* DueApp.swift */,
 				8C542976288487DA008EB10A /* DueDetailView.swift */,
@@ -122,6 +140,7 @@
 				8C4EB72D2897033A0000BF00 /* InfoTextView.swift */,
 				8C54299E288499D2008EB10A /* SliderCalendarView.swift */,
 				8C5429A5288707EF008EB10A /* GaugeProgress.swift */,
+				84A16CD928995ADC00637C7E /* fonts */,
 				8C542978288487DC008EB10A /* Assets.xcassets */,
 				8C54297A288487DC008EB10A /* Preview Content */,
 			);
@@ -266,7 +285,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A16CDF28995B8F00637C7E /* Poppins-SemiBold.ttf in Resources */,
 				8C54297C288487DC008EB10A /* Preview Assets.xcassets in Resources */,
+				84A16CDE28995B8F00637C7E /* Poppins-Medium.ttf in Resources */,
+				84A16CDD28995B8F00637C7E /* Poppins-Light.ttf in Resources */,
 				8C542979288487DC008EB10A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +486,7 @@
 				DEVELOPMENT_TEAM = 9ANH3XJHMC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Due/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -493,6 +516,7 @@
 				DEVELOPMENT_TEAM = 9ANH3XJHMC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Due/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
