@@ -19,7 +19,7 @@ struct InfoTextView: View {
             Section(header: Text("Zusätzliche Infos:")) {
                 ZStack {
                     TextEditor(text: $username)
-                        .frame(minHeight: 200, idealHeight: 150, maxHeight: 200, alignment: .topLeading)
+                        .frame(minHeight: 200, maxHeight: 200, alignment: .topLeading)
                         .overlay(
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color.white, lineWidth: 1))
@@ -41,6 +41,3 @@ struct InfoTextView_Previews: PreviewProvider {
             .padding(.horizontal)
     }
 }
-
-
-
