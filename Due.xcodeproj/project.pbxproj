@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
 		84A16CDD28995B8F00637C7E /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84A16CDA28995B8F00637C7E /* Poppins-Light.ttf */; };
 		84A16CDE28995B8F00637C7E /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84A16CDB28995B8F00637C7E /* Poppins-Medium.ttf */; };
 		84A16CDF28995B8F00637C7E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84A16CDC28995B8F00637C7E /* Poppins-SemiBold.ttf */; };
+		84A16CC62898237C00637C7E /* ProjectOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A16CC52898237C00637C7E /* ProjectOverView.swift */; };
+		84A16CCA2898256F00637C7E /* ProjectItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A16CC92898256F00637C7E /* ProjectItemView.swift */; };
 		8C4EB72E2897033A0000BF00 /* InfoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EB72D2897033A0000BF00 /* InfoTextView.swift */; };
+		8C4EB73028984FD30000BF00 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EB72F28984FD20000BF00 /* CalendarView.swift */; };
+		8C4EB7322898505E0000BF00 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EB7312898505D0000BF00 /* DatePickerView.swift */; };
+		8C4EB734289856E30000BF00 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EB733289856E30000BF00 /* DateValue.swift */; };
 		8C542975288487DA008EB10A /* DueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C542974288487DA008EB10A /* DueApp.swift */; };
 		8C542977288487DA008EB10A /* DueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C542976288487DA008EB10A /* DueDetailView.swift */; };
 		8C542979288487DC008EB10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C542978288487DC008EB10A /* Assets.xcassets */; };
@@ -50,7 +56,12 @@
 		84A16CDB28995B8F00637C7E /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		84A16CDC28995B8F00637C7E /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		84A16CE02899617E00637C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		84A16CC52898237C00637C7E /* ProjectOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOverView.swift; sourceTree = "<group>"; };
+		84A16CC92898256F00637C7E /* ProjectItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemView.swift; sourceTree = "<group>"; };
 		8C4EB72D2897033A0000BF00 /* InfoTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTextView.swift; sourceTree = "<group>"; };
+		8C4EB72F28984FD20000BF00 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = Due/CalendarView.swift; sourceTree = SOURCE_ROOT; };
+		8C4EB7312898505D0000BF00 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		8C4EB733289856E30000BF00 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		8C542971288487DA008EB10A /* Due.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Due.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C542974288487DA008EB10A /* DueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueApp.swift; sourceTree = "<group>"; };
 		8C542976288487DA008EB10A /* DueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DueDetailView.swift; sourceTree = "<group>"; };
@@ -104,6 +115,21 @@
 				84A16CDC28995B8F00637C7E /* Poppins-SemiBold.ttf */,
 			);
 			path = fonts;
+		84A16CC72898238800637C7E /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				8C4EB72F28984FD20000BF00 /* CalendarView.swift */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		84A16CC82898239500637C7E /* Partials */ = {
+			isa = PBXGroup;
+			children = (
+				84A16CC92898256F00637C7E /* ProjectItemView.swift */,
+				8C4EB7312898505D0000BF00 /* DatePickerView.swift */,
+			);
+			path = Partials;
 			sourceTree = "<group>";
 		};
 		8C542968288487DA008EB10A = {
@@ -131,10 +157,13 @@
 			children = (
 				84A16CE02899617E00637C7E /* Info.plist */,
 				8C5429A02884A083008EB10A /* Models */,
+				84A16CC72898238800637C7E /* Templates */,
+				84A16CC82898239500637C7E /* Partials */,
 				8C542974288487DA008EB10A /* DueApp.swift */,
 				8C542976288487DA008EB10A /* DueDetailView.swift */,
 				8C5429A72888309A008EB10A /* ProjectDetailView.swift */,
 				8C5429A9288C8E38008EB10A /* TaskOverView.swift */,
+				84A16CC52898237C00637C7E /* ProjectOverView.swift */,
 				8C5429AB288D9C51008EB10A /* SliderTaskView.swift */,
 				8C5429AD288D9FA4008EB10A /* ControlBarView.swift */,
 				8C4EB72D2897033A0000BF00 /* InfoTextView.swift */,
@@ -177,6 +206,7 @@
 			children = (
 				8C5429A12884A0A4008EB10A /* Theme.swift */,
 				8C5429A32884A324008EB10A /* DueModel.swift */,
+				8C4EB733289856E30000BF00 /* DateValue.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,10 +346,15 @@
 			files = (
 				8C5429AC288D9C51008EB10A /* SliderTaskView.swift in Sources */,
 				8C54299F288499D2008EB10A /* SliderCalendarView.swift in Sources */,
+				84A16CC62898237C00637C7E /* ProjectOverView.swift in Sources */,
 				8C5429AE288D9FA4008EB10A /* ControlBarView.swift in Sources */,
 				8C5429A42884A324008EB10A /* DueModel.swift in Sources */,
+				8C4EB734289856E30000BF00 /* DateValue.swift in Sources */,
 				8C5429A6288707EF008EB10A /* GaugeProgress.swift in Sources */,
+				8C4EB7322898505E0000BF00 /* DatePickerView.swift in Sources */,
+				84A16CCA2898256F00637C7E /* ProjectItemView.swift in Sources */,
 				8C5429A22884A0A4008EB10A /* Theme.swift in Sources */,
+				8C4EB73028984FD30000BF00 /* CalendarView.swift in Sources */,
 				8C542977288487DA008EB10A /* DueDetailView.swift in Sources */,
 				8C542975288487DA008EB10A /* DueApp.swift in Sources */,
 				8C5429A82888309A008EB10A /* ProjectDetailView.swift in Sources */,
