@@ -75,24 +75,30 @@ extension DueModel {
         DueModel(
                 title: "3D Projekt",
                 attendees: ["Tanja", "Josef", "Sarah", "Samuel"],
-                tasks: [TaskModel(title: "3D Design Task", task_time: getSampleTime(hour: 12, minute: 50), task_date: getSampleDate(offset: 5)),
-                        TaskModel(title: "3D Papers", task_date: getSampleDate(offset: 12))],
+                tasks: [
+                    TaskModel(title: "3D Design Task", task_time: getSampleTime(hour: 12, minute: 50), task_date: getSampleDate(offset: 5)),
+                    TaskModel(title: "3D Papers", task_date: getSampleDate(offset: 12))
+                ],
                 due_date: getSampleDate(offset: 33),
                 theme: .yellow),
         
         DueModel(
                 title: "Operating Systems",
                 attendees: ["Katie", "Gray", "Euna", "Luis", "Darla"],
-                tasks: [TaskModel(title: "Write in C", task_date: getSampleDate(offset: 35)),
-                        TaskModel(title: "Love SEG-Fault",  task_date: getSampleDate(offset: 39)),
-                        TaskModel(title: "TeamWork",  task_date: getSampleDate(offset: 44))],
+                tasks: [
+                    TaskModel(title: "Write in C", task_date: getSampleDate(offset: 35)),
+                    TaskModel(title: "Love SEG-Fault",  task_date: getSampleDate(offset: 39)),
+                    TaskModel(title: "TeamWork",  task_date: getSampleDate(offset: 44))
+                ],
                 due_date: getSampleDate(offset: 50),
-                theme: .sky),
+                theme: .blue),
         
         DueModel(title: "OOP 2", attendees: ["Chella", "Chris", "Christina", "Eden", "Karla"],
-                 tasks: [TaskModel(title: "Write in JAVA", task_date: getSampleDate(offset: 66))],
+                 tasks: [
+                    TaskModel(title: "Write in JAVA", task_date: getSampleDate(offset: 66))
+                 ],
                  due_date: getSampleDate(offset: 90),
-                 theme: .poppy)
+                 theme: .red)
     ]
 }
 
