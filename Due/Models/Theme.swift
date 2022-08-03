@@ -8,17 +8,27 @@
 import SwiftUI
 
 enum Theme: String {
+    case bubblegum
+    case buttercup
+    case indigo
+    case lavender
+    case magenta
+    case navy
     case orange
-    case red
-    case blue
-    case lightblue
+    case oxblood
+    case periwinkle
+    case poppy
+    case purple
+    case seafoam
+    case sky
+    case tan
+    case teal
     case yellow
-    case pink
-    case green
-
+    
     var accentColor: Color {
         switch self {
-        case .yellow, .orange, .red, .lightblue, .pink, .green, .blue: return .black
+        case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
+        case .indigo, .magenta, .navy, .oxblood, .purple: return .white
         }
     }
     
