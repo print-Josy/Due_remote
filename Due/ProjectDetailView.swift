@@ -19,7 +19,7 @@ struct ProjectDetailView: View {
                 VStack {
                     HStack {
                         Text("Due-Date: ")
-                        Text(due.due_date)
+                        Text(extraDate())
                         Spacer()
                         
                         // Gauge - ProgressView
@@ -50,6 +50,16 @@ struct ProjectDetailView: View {
             }
         }
     }
+    
+    // extracting date: day. month.
+    func extraDate() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM."
+        
+        let date = formatter.string(from: due.due_date)
+        return date
+    }
+    
 }
 
 struct ProjectDetailView_Previews: PreviewProvider {

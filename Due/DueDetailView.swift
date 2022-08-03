@@ -33,7 +33,7 @@ struct DueDetailView: View {
                         
                         HStack {
                             Text("Due-Date: ")
-                            Text(due.due_date)
+                            Text(extraDate())
                         }
                         .padding(.bottom, 30)
                         .accessibilityElement(children: .combine)
@@ -68,6 +68,16 @@ struct DueDetailView: View {
             }
         }
     }
+    
+    // extracting date: day. month.
+    func extraDate() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM."
+        
+        let date = formatter.string(from: due.due_date)
+        return date
+    }
+    
 }
 
 struct DueDetailView_Previews: PreviewProvider {
