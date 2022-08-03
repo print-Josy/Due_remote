@@ -21,7 +21,7 @@ struct SliderTaskView: View {
                     .accessibilityLabel("date of the task")
                 VStack(alignment: .leading) {
                     Text(due.tasks![0].title)
-                        .font(.caption)
+                        //.font(.custom("Poppins-SemiBold", size: 12))
                         .fontWeight(.semibold)
                         .accessibilityAddTraits(.isHeader)
                     
