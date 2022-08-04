@@ -14,14 +14,14 @@ struct SliderTaskView: View {
     var body: some View {
         VStack {
             HStack {
-                Text(due.tasks![0].task_date)
+                Text(extraDate())
                     .font(.title)
                     .fontWeight(.semibold)
                     .padding(.horizontal)
                     .accessibilityLabel("date of the task")
                 VStack(alignment: .leading) {
                     Text(due.tasks![0].title)
-                        .font(.caption)
+                        //.font(.custom("Poppins-SemiBold", size: 12))
                         .fontWeight(.semibold)
                         .accessibilityAddTraits(.isHeader)
                     
@@ -42,6 +42,16 @@ struct SliderTaskView: View {
         .foregroundColor(due.theme.accentColor)
         
     }
+    
+    // extracting date: day. month.
+    func extraDate() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd.MM."
+        
+        let date = formatter.string(from: due.tasks![0].task_date)
+        return date
+    }
+    
 }
 
 struct SliderTaskView_Previews: PreviewProvider {

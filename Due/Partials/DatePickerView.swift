@@ -129,10 +129,14 @@ struct DatePickerView: View {
             return DateValue(day: day, date: date)
         }
         // adding offset days to get exact week day
-        let firstWeekday = calendar.component(.weekday, from: days.first?.date ?? Date())
-        
-        for _ in 0..<firstWeekday - 1 {
-            days.insert(DateValue(day: -1, date: Date()), at: 0)
+        var firstWeekday = calendar.component(.weekday, from: days.first?.date ?? Date())
+        if firstWeekday > 0 {
+            firstWeekday -= 1
+        }
+        if firstWeekday > 1 {
+            for _ in 0..<firstWeekday - 1 {
+                days.insert(DateValue(day: -1, date: Date()), at: 0)
+            }
         }
         return days
     }
@@ -156,7 +160,7 @@ extension Date {
         
         //getting date
         return range.compactMap { day -> Date in
-            return calendar.date(byAdding: .day, value: day - 1, to: startDate)!
+            return calendar.date(byAdding: .day, value: day - 1 , to: startDate)!
             
         }
     }

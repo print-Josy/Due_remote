@@ -19,7 +19,7 @@ struct SliderCalendarView: View {
                         .padding(.horizontal)
                 }
                 else {
-                    Text(due.tasks![0].task_time!)
+                    Text(extraDate())
                         .font(.title)
                         .fontWeight(.semibold)
                         .padding(.horizontal)
@@ -48,6 +48,17 @@ struct SliderCalendarView: View {
         .foregroundColor(due.theme.accentColor)
         
     }
+    
+    // extracting date: hour : minute
+    func extraDate() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        
+        let date = formatter.string(from: due.tasks![0].task_date)
+        return date
+    }
+    
+    
 }
 
 struct SliderCalendarView_Previews: PreviewProvider {
