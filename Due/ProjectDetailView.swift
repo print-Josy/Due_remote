@@ -12,7 +12,8 @@ struct ProjectDetailView: View {
     
     var body: some View {
         ZStack {
-            Color.yellow.ignoresSafeArea()
+            Rectangle().ignoresSafeArea()
+                .foregroundColor(due.theme.mainColor)
             
             VStack {
                 

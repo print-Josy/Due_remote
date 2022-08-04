@@ -67,10 +67,12 @@ struct ControlBarView: View {
 
 struct ControlBar_Previews: PreviewProvider {
     static var previews: some View {
-        ControlBarView()
-            .background(Color.black)
-            .clipShape(Capsule())
-            .border(Color.white, width: 1)
-            .previewLayout(.fixed(width: 384.0, height: 60))
+        NavigationView {
+            ControlBarView()
+                .background(Color.black)
+                .clipShape(Capsule())
+                .border(Color.white, width: 1)
+                .previewLayout(.fixed(width: 384.0, height: 60))
+        }
     }
 }
