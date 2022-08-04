@@ -18,7 +18,8 @@ enum Theme: String {
 
     var accentColor: Color {
         switch self {
-        case .yellow, .orange, .red, .lightblue, .pink, .green, .blue: return .black
+        case .orange, .red, .lightblue, .pink, .green, .blue: return .white
+        case .yellow: return .black
         }
     }
     
