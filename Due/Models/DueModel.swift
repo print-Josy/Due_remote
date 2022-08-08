@@ -14,14 +14,16 @@ struct DueModel: Identifiable {
     var attendees: [Attendee]
     var tasks: [TaskModel]?
     var due_date: Date
+    var info: String?
     var theme: Theme
     
-    init(id: UUID = UUID(), title: String, attendees: [String], tasks: [TaskModel]?=nil, due_date: Date, theme: Theme) {
+    init(id: UUID = UUID(), title: String, attendees: [String], tasks: [TaskModel]?=nil, due_date: Date, info: String?=nil, theme: Theme) {
         self.id = id
         self.title = title
         self.attendees = attendees.map { Attendee(name: $0) }
         self.tasks = tasks
         self.due_date = due_date
+        self.info = info
         self.theme = theme
     }
 }
@@ -30,44 +32,91 @@ struct TaskModel: Identifiable {
     let id: UUID
     var title: String
     var project: DueModel?
+    var task_type: TaskType?
+    var attendees: [Attendee]
     var task_date: Date
     var task_time: Date?
+    var priority: Bool?
+    var info: String?
     
-    init(id: UUID = UUID(), title: String, project: DueModel?=nil, task_time: Date?=nil, task_date: Date) {
+    init(id: UUID = UUID(), title: String, project: DueModel?=nil, task_type: TaskType?=nil, attendees: [String], task_date: Date, task_time: Date?=nil, priority: Bool?=nil, info: String?=nil) {
         self.id = id
         self.title = title
         self.project = project
+        self.task_type = task_type
+        self.attendees = attendees.map {Attendee(name: $0) }
         self.task_date = task_date
         self.task_time = task_time
+        self.priority = priority
+        self.info = info
     }
 }
 
-extension DueModel {
-    struct Attendee: Identifiable, Codable {
-        let id: UUID
-        var name: String
-        
-        init(id: UUID = UUID(), name: String) {
-            self.id = id
-            self.name = name
-        }
-    }
+struct Attendee: Identifiable, Codable {
+    let id: UUID
+    var name: String
     
-    struct Data {
-        var title: String = ""
-//        var project: DueModel?
-        var type: String?
-//        var task_date: Date = Date()
-//        var task_time: Date?
-        var attendees: [Attendee]? = []
-//        var priority: Bool = false
-//        var addInfo: String?
-    }
-    
-    var data: Data {
-        Data(title: title, attendees: attendees)
+    init(id: UUID = UUID(), name: String) {
+        self.id = id
+        self.name = name
     }
 }
+struct TaskType {
+    let id: UUID
+    var name: String
+    
+    init(id: UUID = UUID(), name: String) {
+        self.id = id
+        self.name = name
+    }
+}
+
+
+extension DueModel {
+    
+    struct ProjectData {
+        var title: String = ""
+        var attendees: [Attendee]? = []
+        var due_date: Date = Date()
+        var theme: Theme
+        var info: String?
+        
+    }
+    
+    var p_data: ProjectData {
+        ProjectData(title: title, attendees: attendees, due_date: due_date, theme: theme, info: info)
+    }
+}
+
+
+extension TaskModel {
+    
+    struct TaskData {
+        var title: String = ""
+        var project: DueModel?
+        var task_type: TaskType?
+        var attendees: [Attendee]? = []
+        var task_date: Date = Date()
+        var task_time: Date?
+        var priority: Bool? = false
+        var info: String?
+    }
+    
+    var t_data: TaskData {
+        TaskData(title: title, project: project, task_type: task_type, attendees: attendees, task_date: task_date, task_time: task_time, priority: priority, info: info)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 func getSampleDate(offset: Int)->Date {
     let calendar = Calendar.current
@@ -82,17 +131,30 @@ func getSampleTime(hour: Int, minute: Int)->Date {
     return time ?? Date()
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 extension DueModel {
-    
-    
     static let sampleData: [DueModel] =
     [
         DueModel(
                 title: "3D Projekt",
                 attendees: ["Tanja", "Josef", "Sarah", "Samuel"],
                 tasks: [
-                    TaskModel(title: "3D Design Task", task_time: getSampleTime(hour: 12, minute: 50), task_date: getSampleDate(offset: 5)),
-                    TaskModel(title: "3D Papers", task_date: getSampleDate(offset: 12))
+                    TaskModel(title: "3D Design Task", attendees: ["Josef"], task_date: getSampleDate(offset: 5), task_time: getSampleTime(hour: 12, minute: 50)),
+                    TaskModel(title: "3D Papers", attendees: ["Tanja", "Josef"], task_date: getSampleDate(offset: 12))
                 ],
                 due_date: getSampleDate(offset: 33),
                 theme: .yellow),
@@ -101,16 +163,16 @@ extension DueModel {
                 title: "Operating Systems",
                 attendees: ["Katie", "Gray", "Euna", "Luis", "Darla"],
                 tasks: [
-                    TaskModel(title: "Write in C", task_date: getSampleDate(offset: 35)),
-                    TaskModel(title: "Love SEG-Fault",  task_date: getSampleDate(offset: 39)),
-                    TaskModel(title: "TeamWork",  task_date: getSampleDate(offset: 44))
+                    TaskModel(title: "Write in C", attendees: ["Gray"], task_date: getSampleDate(offset: 35)),
+                    TaskModel(title: "Love SEG-Fault", attendees: ["Luis"], task_date: getSampleDate(offset: 39)),
+                    TaskModel(title: "TeamWork", attendees: ["Darla"], task_date: getSampleDate(offset: 44))
                 ],
                 due_date: getSampleDate(offset: 50),
                 theme: .blue),
         
         DueModel(title: "OOP 2", attendees: ["Chella", "Chris", "Christina", "Eden", "Karla"],
                  tasks: [
-                    TaskModel(title: "Write in JAVA", task_date: getSampleDate(offset: 66))
+                    TaskModel(title: "Write in JAVA", attendees: ["Eden"], task_date: getSampleDate(offset: 66))
                  ],
                  due_date: getSampleDate(offset: 90),
                  theme: .red)

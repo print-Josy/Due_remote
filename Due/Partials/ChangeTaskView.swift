@@ -12,7 +12,7 @@ struct ChangeTaskView: View {
         UITableView.appearance().backgroundColor = .clear
     }
     
-    @State private var data = DueModel.Data()
+    @State private var data = TaskModel.TaskData()
     
     var body: some View {
         ZStack {
