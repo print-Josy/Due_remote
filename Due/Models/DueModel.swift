@@ -30,15 +30,15 @@ struct TaskModel: Identifiable {
     let id: UUID
     var title: String
     var project: DueModel?
-    var task_time: Date?
     var task_date: Date
+    var task_time: Date?
     
     init(id: UUID = UUID(), title: String, project: DueModel?=nil, task_time: Date?=nil, task_date: Date) {
         self.id = id
         self.title = title
         self.project = project
-        self.task_time = task_time
         self.task_date = task_date
+        self.task_time = task_time
     }
 }
 
@@ -51,6 +51,21 @@ extension DueModel {
             self.id = id
             self.name = name
         }
+    }
+    
+    struct Data {
+        var title: String = ""
+//        var project: DueModel?
+        var type: String?
+//        var task_date: Date = Date()
+//        var task_time: Date?
+        var attendees: [Attendee]? = []
+//        var priority: Bool = false
+//        var addInfo: String?
+    }
+    
+    var data: Data {
+        Data(title: title, attendees: attendees)
     }
 }
 

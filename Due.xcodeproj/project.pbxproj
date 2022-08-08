@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		84A16CC62898237C00637C7E /* ProjectOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A16CC52898237C00637C7E /* ProjectOverView.swift */; };
 		84A16CCA2898256F00637C7E /* ProjectItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A16CC92898256F00637C7E /* ProjectItemView.swift */; };
+		84A16CE4289BDF6D00637C7E /* ChangeTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A16CE3289BDF6D00637C7E /* ChangeTaskView.swift */; };
 		8C4EB72E2897033A0000BF00 /* InfoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EB72D2897033A0000BF00 /* InfoTextView.swift */; };
 		8C4EB73028984FD30000BF00 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EB72F28984FD20000BF00 /* CalendarView.swift */; };
 		8C4EB7322898505E0000BF00 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EB7312898505D0000BF00 /* DatePickerView.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		84A16CC52898237C00637C7E /* ProjectOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectOverView.swift; sourceTree = "<group>"; };
 		84A16CC92898256F00637C7E /* ProjectItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectItemView.swift; sourceTree = "<group>"; };
+		84A16CE3289BDF6D00637C7E /* ChangeTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTaskView.swift; sourceTree = "<group>"; };
 		8C4EB72D2897033A0000BF00 /* InfoTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTextView.swift; sourceTree = "<group>"; };
 		8C4EB72F28984FD20000BF00 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalendarView.swift; path = Due/CalendarView.swift; sourceTree = SOURCE_ROOT; };
 		8C4EB7312898505D0000BF00 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				84A16CC92898256F00637C7E /* ProjectItemView.swift */,
 				8C4EB7312898505D0000BF00 /* DatePickerView.swift */,
+				84A16CE3289BDF6D00637C7E /* ChangeTaskView.swift */,
 			);
 			path = Partials;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				8C5429AC288D9C51008EB10A /* SliderTaskView.swift in Sources */,
 				8C54299F288499D2008EB10A /* SliderCalendarView.swift in Sources */,
 				84A16CC62898237C00637C7E /* ProjectOverView.swift in Sources */,
+				84A16CE4289BDF6D00637C7E /* ChangeTaskView.swift in Sources */,
 				8C5429AE288D9FA4008EB10A /* ControlBarView.swift in Sources */,
 				8C5429A42884A324008EB10A /* DueModel.swift in Sources */,
 				8C4EB734289856E30000BF00 /* DateValue.swift in Sources */,

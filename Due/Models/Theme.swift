@@ -15,10 +15,11 @@ enum Theme: String {
     case yellow
     case pink
     case green
+    case darkgrey
 
     var accentColor: Color {
         switch self {
-        case .orange, .red, .lightblue, .pink, .green, .blue: return .white
+        case .orange, .red, .lightblue, .pink, .green, .blue, .darkgrey: return .white
         case .yellow: return .black
         }
     }
